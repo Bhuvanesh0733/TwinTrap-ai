@@ -1,0 +1,15 @@
+Terminal 1 — Backend:
+  cd d:\Projects\twintrap\backend
+  .\venv\Scripts\uvicorn.exe app.main:app --host 0.0.0.0 --port 8000
+
+Terminal 2 — Backend tunnel:
+  d:\Projects\twintrap\cloudflared.exe tunnel --url http://localhost:8000
+  → update frontend\.env.local with new URL
+
+Terminal 3 — Frontend:
+  cd d:\Projects\twintrap\frontend
+  npm run dev -- --host 0.0.0.0
+
+Terminal 4 — Frontend tunnel:
+  d:\Projects\twintrap\cloudflared.exe tunnel --url http://localhost:5173
+  → open [tunnel-url]/mobile on phone
