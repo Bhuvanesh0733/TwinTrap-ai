@@ -13,6 +13,7 @@ application — a Python/FastAPI backend and a React/Vite/Tailwind frontend — 
    presenting the project in person.
 
 No Streamlit. No notebooks pretending to be a product. A real client/server application, run locally.
+**Live Demo →** [https://twin-trap-ai.vercel.app/](https://twin-trap-ai.vercel.app/)
 
 ---
 
